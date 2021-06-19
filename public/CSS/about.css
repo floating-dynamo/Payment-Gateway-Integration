@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(
+    to left,
+    rgba(163, 175, 243, 1),
+    rgba(220, 182, 232, 1)
+  );
+}
+/* navigation bar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+  align-items: center;
+  font-weight: 400;
+}
+@media (max-device-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 0 5px;
+}
+@media (max-device-width: 700px) {
+  .navbar-brand {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-brand-img {
+    margin-bottom: 20px;
+  }
+}
+.navbar-brand::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  background: white;
+  z-index: -1;
+  transform: translateX(-100%);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transition: all 0.3s linear;
+  padding: 0 5px;
+  width: 100%;
+  height: 100%;
+}
+.navbar-brand:hover:before {
+  transform: translateX(0);
+}
+a {
+  text-decoration: none;
+}
+.navbar-brand-title {
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 1.25rem;
+  transition: all 0.5s ease;
+}
+.navbar-brand-title:hover {
+  color: #444;
+}
+.navbar-brand-img {
+  background-image: url("https://media.glassdoor.com/sqll/2143300/the-sparks-foundation-squarelogo-1556515236044.png");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  border-radius: 50%;
+}
+.navbar-link {
+  margin: 0 20px;
+  color: #444;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.navbar-links {
+  overflow: hidden;
+}
+.navbar-link::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  padding: 0 15px;
+  transform: translateY(-100%);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: all 0.3s linear;
+  background: rgba(255, 255, 255, 0.294);
+}
+.navbar-links a:hover:before {
+  transform: translateX(0);
+}
+@media (max-device-width: 700px) {
+  .navbar-links {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar-links a {
+    margin: 10px 0;
+  }
+}
+.navbar-link {
+  transition: all 0.3s linear;
+}
+.navbar-link:hover {
+  font-weight: bolder;
+}
+.navbar-link-1:hover {
+  color: #867ae9;
+}
+.navbar-link-2:hover {
+  color: #f54748;
+}
+.navbar-link-3:hover {
+  color: #39a6a3;
+}
+
+.container-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+  margin: 20px auto;
+  width: 94%;
+  height: 500px;
+}
+.about {
+  margin: auto;
+  padding: 50px 100px;
+  background: rgba(255, 255, 255, 0.664);
+  width: 50%;
+  text-align: center;
+}
+
+.about-title {
+  position: relative;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+.about-title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #f54748;
+  bottom: -10px;
+  border-radius: 10px;
+  left: 0;
+}
+.container-mid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px;
+  text-align: center;
+  padding: 0 100px;
+  word-spacing: 2px;
+}
+.container-mid-para {
+  margin: 30px 0;
+}
+
+/* Bottom Container  */
+.container-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.card {
+  margin: 20px;
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.664);
+  padding-bottom: 80px;
+  border-radius: 40px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.card-img {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  background-position: center;
+  background-size: cover;
+}
+.card-img-1 {
+  background-image: url("https://image.flaticon.com/icons/png/512/3063/3063112.png");
+}
+.card-img-2 {
+  background-image: url("https://image.flaticon.com/icons/png/512/1692/1692181.png");
+}
+.card-img-3 {
+  background-image: url("https://image.flaticon.com/icons/png/512/2057/2057748.png");
+}
+
+.card-content {
+  padding: 0 30px;
+}
+.card-title {
+  margin: 20px 0;
+}
+.card-para {
+  margin-top: 50px;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-hr {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.card-hr-1 {
+  background: #867ae9;
+}
+.card-hr-2 {
+  background: #f54748;
+}
+.card-hr-3 {
+  background: #39a6a3;
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px 0 20px 0;
+  background: rgba(0, 0, 0, 0.308);
+}

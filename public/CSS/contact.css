@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(
+    to left,
+    rgba(163, 175, 243, 1),
+    rgba(220, 182, 232, 1)
+  );
+}
+/* navigation bar */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px;
+  align-items: center;
+  font-weight: 400;
+}
+@media (max-device-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 0 5px;
+}
+@media (max-device-width: 700px) {
+  .navbar-brand {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-brand-img {
+    margin-bottom: 20px;
+  }
+}
+a {
+  text-decoration: none;
+}
+.navbar-brand-title {
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1.25rem;
+  transition: all 0.5s ease;
+}
+.navbar-brand::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  background: white;
+  z-index: -1;
+  transform: translateX(-100%);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  transition: all 0.3s linear;
+  padding: 0 5px;
+  width: 100%;
+  height: 100%;
+}
+.navbar-brand:hover:before {
+  transform: translateX(0);
+}
+.navbar-brand-title:hover {
+  color: #444;
+}
+.navbar-brand-img {
+  background-image: url("https://media.glassdoor.com/sqll/2143300/the-sparks-foundation-squarelogo-1556515236044.png");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  border-radius: 50%;
+  z-index: 2;
+}
+.navbar-link {
+  margin: 0 20px;
+  color: #444;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.navbar-links {
+  overflow: hidden;
+}
+.navbar-link::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  padding: 0 20px;
+  transform: translateY(-100%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: all 0.3s linear;
+  background: rgba(255, 255, 255, 0.294);
+}
+.navbar-links a:hover:before {
+  transform: translateX(0);
+}
+@media (max-device-width: 700px) {
+  .navbar-links {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navbar-links a {
+    margin: 10px 0;
+  }
+}
+
+.navbar-link {
+  transition: all 0.3s linear;
+}
+.navbar-link:hover {
+  font-weight: bolder;
+}
+.navbar-link-1:hover {
+  color: #867ae9;
+}
+.navbar-link-2:hover {
+  color: #f54748;
+}
+.navbar-link-3:hover {
+  color: #39a6a3;
+}
+
+/* Main-title */
+.main-title {
+  margin: 20px auto;
+  text-align: center;
+  width: 50vw;
+  padding: 25px 10px;
+  background: rgba(255, 255, 255, 0.664);
+}
+.main-title h1 {
+  display: inline-block;
+  margin-bottom: 20px;
+  position: relative;
+}
+.main-title h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #39a6a3;
+  bottom: -10px;
+  border-radius: 10px;
+  left: 0;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-right: 50px;
+  flex-wrap: wrap;
+}
+input {
+  margin: 10px 0;
+  padding: 10px 15px;
+}
+textarea {
+  padding: 10px;
+}
+input::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+}
+.section-2 {
+  margin-left: 50px;
+  text-align: center;
+}
+.section-2 h3 {
+  margin-bottom: 20px;
+}
+.section-2 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.social-media {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media a {
+  margin: 10px 15px;
+  color: #7168c4;
+}
+.social-media a:hover {
+  color: #867ae9;
+}
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px 0 20px 0;
+  background: rgba(0, 0, 0, 0.308);
+}
