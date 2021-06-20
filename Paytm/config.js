@@ -1,6 +1,6 @@
 var PaytmConfig = {
-    mid: "umxGwK32499603029894",
-    key: "hraeZqJvx%TUGx1%",
-    website: "WEBSTAGING",
+    mid: //merchant id,
+    key: //key,
+    website: //website,
 };
 module.exports.PaytmConfig = PaytmConfig;
